@@ -14,7 +14,8 @@ var express = require('express'),
        res.render('index', {
        	
        	balance:response.amount,
-       	type:response.type
+       	type:response.type,
+        method:response.payment
        	
        });
     });   

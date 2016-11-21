@@ -20,11 +20,20 @@ html.no-js(lang='en')
         | Menu
         span
     // .cd-header
-
-    main
-      h1   Credit
-      h1=  balance
+    .main
+      table
+        tr
+          th Payment Method
+          th Currency
+          th Amounts
+        tr
+          td= method
+          td= type
+          td= balance
+         
       // all your content here
+      
+
     nav.cd-3d-nav-container
       ul.cd-3d-nav
         li.cd-selected
