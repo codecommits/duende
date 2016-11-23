@@ -458,4 +458,6 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-.ucwords { text-transform: capitalize; }
+.ucwords{ 
+  text-transform:capitalize;
+}
