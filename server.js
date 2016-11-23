@@ -1,8 +1,9 @@
-var express = require('express'),
-    sprintf = require('locutus/php/strings/sprintf'),
-    echo = require('locutus/php/strings/echo'),
-    ucwords = require('locutus/php/strings/ucwords'),
-    effectiveness = 'futile',
+var express       =     require('express'),
+    sprintf       =     require('locutus/php/strings/sprintf'),
+    echo          =     require('locutus/php/strings/echo'),
+    ucwords       =     require('locutus/php/strings/ucwords'),
+    effectiveness =             'futile',
+   
     
 	  app 	= express();
 	  messagebird = require('messagebird')('test_jfX7IFLu07gSea3nBwlkDMJvZ');
@@ -19,13 +20,18 @@ var express = require('express'),
        res.render('index', {
        	
        	balance:response.amount,
-       	type:response.type,
-        method:response.payment
+        // balance:response['amount'];
+       	// type:response.type
+        // method:response.payment
+        console.log(balance);
+
 
        	
        });
     });   
  });
+
+
 app.listen(3000, function () {
 	console.log('ReadyUp');
 });
