@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	padding-top: 50px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	background-color: #9a49ca;
+	text-align: center;
+	/*width: 600px;*/
+	height: 500px;
+}
+h1{
+	color: #fff;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+th{
+	color: #fff;
+}
+td{ 
+  text-transform:capitalize;
+}
+.table{
+	padding-left: 35%;
+}

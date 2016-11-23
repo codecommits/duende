@@ -8,7 +8,7 @@ var express       =     require('express'),
 	  app 	= express();
 	  messagebird = require('messagebird')('test_jfX7IFLu07gSea3nBwlkDMJvZ');
 
-    app.set('view engine', 'jade');
+    app.set('view engine', 'ejs');
     app.use(express.static(__dirname + '/public'));
 
     app.get('/',function(req,res) {
@@ -19,11 +19,11 @@ var express       =     require('express'),
       
        res.render('index', {
        	
-       	balance:response.amount,
-        // balance:response['amount'];
-       	// type:response.type
-        // method:response.payment
-        console.log(balance);
+      
+        balance:response.amount,
+       	type:response.type,
+        method:response.payment
+
 
 
        	
